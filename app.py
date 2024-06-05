@@ -15,7 +15,7 @@ load_dotenv()
 os.environ['HUGGINGFACE_API_KEY'] = os.getenv('HUGGINGFACE_API_KEY')
 
 # Initialize PubMed
-pubmed = PubMed(tool="Haystack2.0Prototype", email="singh.ayushk1128@gmail.com")
+pubmed = PubMed(tool="Haystack2.0Prototype", email="Your email")
 
 def documentize(article):
     return Document(content=article.abstract, meta={'title': article.title, 'keywords': article.keywords})
